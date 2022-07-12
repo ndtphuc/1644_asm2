@@ -1,0 +1,51 @@
+.toy-table{
+    margin-left:10%;
+    background-color:white;
+    margin-top:15px;
+    padding:20px;
+    width: 80%;
+}
+
+/* .bg{
+    background-image: url(../images/bg.jpg);
+    padding-bottom: 30%;
+} */
+
+.btn-delete{
+    color:rgb(255, 58, 58);
+}
+
+.btn-edit{
+    color:rgb(0, 17, 128);
+}
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand { 
+    background: white;
+    float: none;
+    height: 50px; 
+    padding: 15px 15px; 
+    font-size: 18px; 
+    line-height: 20px; 
+    text-align: center;
+    color: black;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #eeeeee;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer{
+    margin-top: auto;
+}

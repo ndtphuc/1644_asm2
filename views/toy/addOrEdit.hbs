@@ -1,0 +1,43 @@
+<h3>{{viewTitle}}</h3>
+<form action="/toy" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{toy._id}}">
+    <div class="form-group">
+        <label>Toy Name</label>
+        <input type="text" class="form-control" name="toyName" value="{{toy.toyName}}" placeholder="Toy Name">
+        <div class="text-danger">
+            {{toy.toyNameError}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <input type="description" class="form-control" name="description" value="{{toy.description}}" placeholder="Description">
+        {{!-- <div class="text-danger">
+            {{toy.emailError}}
+        </div> --}}
+    </div>
+    <div class="form-row">
+        <div class="form-group md-6">
+            <label>Quantity</label>
+            <input type="text" name="quantity" placeholder="Quantity" value="{{toy.quantity}}" class="form-control">
+
+        </div>
+        <div class="form-group md-6">
+            <label>Supplier</label>
+            <input type="text" name="supplier" placeholder="Supplier" value="{{toy.supplier}}" class="form-control">
+        </div>
+
+        <div class="form-group md-6">
+            <label>Price</label>
+            <input type="text" name="price" placeholder="Price" value="{{toy.price}}" class="form-control">
+        </div>
+
+
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-success"><i class="fa fa-database"></i>Submit</button>
+        <a href="toy/list" class="btn btn-info">
+            <i class="fa fa-list-alt"></i>View All
+        </a>
+    </div>
+</form>
